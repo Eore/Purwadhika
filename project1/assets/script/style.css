@@ -1,0 +1,115 @@
+:root {
+    --frame-bg : rgba(149, 106, 55, 1);
+}
+
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container {
+    padding: 10px;
+}
+
+.inner {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section header */
+header {
+    background-color: var(--frame-bg);
+}
+
+header, header .container{
+    height: 100px;
+    width: 100%;
+}
+
+#logo {
+    font-size: 2rem;
+    padding: 10px;
+    margin-right: 10px;
+    /* flex-grow: ; */
+    /* width: 75px;
+    height: 75px; */
+}
+
+#navigasi {
+    flex-grow: 12;
+}
+#navigasi ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#cart {
+    text-align: right;
+    flex-grow: 1;
+}
+
+
+
+/* section main */
+#cari-item {
+    font-size: 1.25rem;
+    border: 1px solid rgba(145, 47, 47, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+    height: 30px;
+    width: 300px;
+}
+
+#tampil-produk {
+    width: 80%;
+    margin: auto;
+}
+
+.frame {
+    width: 250px;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--frame-bg);
+    box-shadow: -2px 2px 5px gray;
+}
+
+.frame-gambar {
+    height: 200px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.frame-gambar img {
+    width: 100%;
+}
+
+.frame-detail{
+    float: left;
+}
+
+.frame-tambah {
+    width: 20%;
+    float: right;
+}
+
+.btn-tambah {
+    cursor: pointer;
+    background-color: transparent;
+    float: right;
+    border: none;
+    font-size: 2rem;
+    height: 100%;
+    margin: auto 0;
+}

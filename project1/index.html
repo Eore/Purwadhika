@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prasmanan.ID</title>
+    <link rel="stylesheet" href="assets/script/style.css">
+</head>
+<body>
+    <header class="flex">
+        <div class="container flex">
+            <div class="inner flex">
+                <div id="logo">
+                    <!-- <img src="logo.png" alt="logo"> -->
+                    Prasmanan.ID
+                </div>
+                <nav id="navigasi">
+                    <ul>
+                        <li>Home</li>
+                        <li>News</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+                <div id="cart">{{cart}}</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="inner">
+                <div class="flex">
+                    <input type="text" id="cari-item" placeholder="cari menu">
+                </div>
+                <div class="flex" id="tampil-produk"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>ini footer</h1>
+    </footer>
+    <script src="assets/data/produk.js"></script>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
+
+<template id="produk">
+    <div class="frame">
+        <div class="frame-gambar">
+            <img src="{{urlGambar}}" alt="{{namaProduk}}">
+        </div>
+        <div class="frame-detail">
+            <div class="nama-produk">
+                {{namaProduk}}
+            </div>
+            <div class="harga-produk">
+                Rp. {{hargaProduk}}
+            </div>
+        </div>
+        <div class="frame-tambah">
+            <button class="btn-tambah" value="{{id}}">+</button>
+        </div>
+    </div>
+</template>
