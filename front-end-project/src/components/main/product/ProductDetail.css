@@ -1,0 +1,109 @@
+.product-detail {
+    position: relative;
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .7);
+}
+
+
+.product-detail > .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 50px;
+    font-size: 2em;
+    /* margin-left: 5px; */
+    /* text-align: center; */
+    line-height: 50px;
+    /* vertical-align: baseline; */
+    color: white;
+    text-shadow: 0 0 10px black;
+    z-index: 1;
+}
+
+
+.product-detail > .image,
+.product-detail > .description {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.product-detail > .image > img {
+    width: 100%;
+}
+
+
+.product-detail > .description > img {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 200%;
+    background-position: center;
+    /* background-size: 1000px; */
+    filter: blur(10px);
+    opacity: .4;
+    z-index: -1;
+}
+
+.product-detail > .description > .like {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+}
+
+.product-detail > .description > .title {
+    width: 80%;
+    margin: 10px 20px;
+    font-size: 3em;
+    text-overflow: clip;
+}
+
+
+.product-detail > .description > .content {
+    text-align: justify;
+    margin: 0 50px;
+}
+
+
+.product-detail > .description > .footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+.product-detail > .description > .footer > strong {
+    margin: 20px;
+    font-size: 2em;
+    flex-grow: 1;
+}
+
+.product-detail > .description > .footer > strong::before {
+    content: 'Harga :';
+    position: absolute;
+    top: 0px;
+    font-size: .5em;
+}
+
+.product-detail > .description > .footer > .tambah {
+    border: none;
+    background-color: lawngreen;
+    /* margin: 20px; */
+    font-size: 2em;
+    font-weight: 100;
+    width: 200px;
+}

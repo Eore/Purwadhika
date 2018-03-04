@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "name": "Nasi Uduk", 
+        "img": "nasi.jpg",
+        "detail": 
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quasi, debitis temporibus reiciendis nobis esse porro nam, eveniet et delectus eaque architecto aperiam suscipit repudiandae ab perspiciatis recusandae aliquam qui. Quia quaerat eveniet fugit distinctio mollitia similique facere aliquam qui autem quo dolorem et exercitationem iste corporis, quibusdam id.", 
+        "price": 3000
+    },
+    {
+        "id": 1,
+        "name": "Ayam Bakar", 
+        "img": "ayam-bakar.jpg",        
+        "detail": 
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quasi, debitis temporibus reiciendis nobis esse porro nam, eveniet et delectus eaque architecto aperiam suscipit repudiandae ab perspiciatis recusandae aliquam qui. Quia quaerat eveniet fugit distinctio mollitia similique facere aliquam qui autem quo dolorem et exercitationem iste corporis, quibusdam id.", 
+        "price": 3000
+    },
+    {
+        "id": 2,
+        "name": "Tahu Goreng", 
+        "img": "tahu-goreng.jpg",        
+        "detail": 
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quasi, debitis temporibus reiciendis nobis esse porro nam, eveniet et delectus eaque architecto aperiam suscipit repudiandae ab perspiciatis recusandae aliquam qui. Quia quaerat eveniet fugit distinctio mollitia similique facere aliquam qui autem quo dolorem et exercitationem iste corporis, quibusdam id.", 
+        "price": 3000
+    },
+    {
+        "id": 3,
+        "name": "Ayam Kalasan", 
+        "img": "ayam-kalasan.jpg",        
+        "detail": 
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quasi, debitis temporibus reiciendis nobis esse porro nam, eveniet et delectus eaque architecto aperiam suscipit repudiandae ab perspiciatis recusandae aliquam qui. Quia quaerat eveniet fugit distinctio mollitia similique facere aliquam qui autem quo dolorem et exercitationem iste corporis, quibusdam id.", 
+        "price": 3000
+    },
+    {
+        "id": 4,
+        "name": "Ayam Kremes", 
+        "img": "ayam-kremes.jpg",        
+        "detail": 
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo quasi, debitis temporibus reiciendis nobis esse porro nam, eveniet et delectus eaque architecto aperiam suscipit repudiandae ab perspiciatis recusandae aliquam qui. Quia quaerat eveniet fugit distinctio mollitia similique facere aliquam qui autem quo dolorem et exercitationem iste corporis, quibusdam id.", 
+        "price": 3000
+    }
+]

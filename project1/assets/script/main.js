@@ -69,11 +69,17 @@ window.onload = () => {
 let cari = id('cari-item'); 
 cari.onkeyup = () => {
     if (cari.value != '') {
-        let found = cariItem(cari.value, produk);
-        if (found.length != 0) id('tampil-produk').innerHTML = cetakProduk(found);
-        else id('tampil-produk').innerHTML = `<h1>Duh, lauk yang di cari masih dimasak :(</h1>`
-    } else {
-        id('tampil-produk').innerHTML = cetakProduk(produk);        
+        id('tampil-produk').style.opacity = 0;
     }
-    assignBtnFunc(cls('btn-tambah'))        
+    setTimeout(() => {
+        if (cari.value != '') {
+            let found = cariItem(cari.value, produk);
+            if (found.length != 0) id('tampil-produk').innerHTML = cetakProduk(found);
+            else id('tampil-produk').innerHTML = `<h1 style="line-height:80vh">Duh, lauk yang di cari masih dimasak :(</h1>`
+        } else {
+            id('tampil-produk').innerHTML = cetakProduk(produk);        
+        }
+        assignBtnFunc(cls('btn-tambah'));
+        id('tampil-produk').style.opacity = 1;        
+    }, 500)
 }

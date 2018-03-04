@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:300|Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Karma', serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+#display-products {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 300px;
+}
+
+#display-products > * {
+    margin: 5px;
+}

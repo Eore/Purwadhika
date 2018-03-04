@@ -8,5 +8,5 @@ produk = [
     {id : 6, nama : 'Ayam Rica', gambar : 'ayam-rica.jpg', harga : 5000},
     {id : 7, nama : 'Ayam Kremes', gambar : 'ayam-kremes.jpg', harga : 5000},
     {id : 8, nama : 'Ayam Kalasan', gambar : 'ayam-kalasan.jpg', harga : 5000},   
-    {id : 9, nama : 'Tahu Krispi', gambar : 'tahu-krispi.jpg', harga : 1000},    
+    {id : 9, nama : 'Tahu Krispi', gambar : 'tahu-krispi.jpg', harga : 1000},
 ]

@@ -3,26 +3,22 @@
 <head>
     <title>Prasmanan.ID</title>
     <link rel="stylesheet" href="assets/script/style.css">
-    <script src="assets/script/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="inner">
+    <header class="flex">
+        <div class="container flex">
+            <div class="inner flex">
                 <div id="logo">
                     <!-- <img src="logo.png" alt="logo"> -->
                     Prasmanan.ID
                 </div>
-                <input type="text" id="cari-item" placeholder="cari menu">
-            <!-- <div> -->
-                <!-- <nav id="navigasi">
+                <nav id="navigasi">
                     <ul>
                         <li>Home</li>
                         <li>News</li>
                         <li>Contact</li>
                     </ul>
-                </nav> -->
-            <!-- </div> -->
+                </nav>
                 <div id="cart">{{cart}}</div>
             </div>
         </div>
@@ -30,10 +26,10 @@
     <main>
         <div class="container">
             <div class="inner">
-                <!-- <div>
+                <div class="flex">
                     <input type="text" id="cari-item" placeholder="cari menu">
-                </div> -->
-                <div id="tampil-produk"></div>
+                </div>
+                <div class="flex" id="tampil-produk"></div>
             </div>
         </div>
     </main>
@@ -47,9 +43,6 @@
 
 <template id="produk">
     <div class="frame">
-        <!-- <div class="frame-tambah">
-            <button class="btn-tambah" value="{{id}}">+</button>
-        </div> -->
         <div class="frame-gambar">
             <img src="{{urlGambar}}" alt="{{namaProduk}}">
         </div>
@@ -61,6 +54,8 @@
                 Rp. {{hargaProduk}}
             </div>
         </div>
-        
+        <div class="frame-tambah">
+            <button class="btn-tambah" value="{{id}}">+</button>
+        </div>
     </div>
 </template>
