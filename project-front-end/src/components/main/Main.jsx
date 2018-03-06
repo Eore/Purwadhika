@@ -14,12 +14,12 @@ let list = products.map(x => <Product key={x.id} {...x}/>);
 
 const Main = props =>
     <div>
-        <center><h1>Most Liked Product</h1></center>
+        <center><h1 className="title">Most Liked Product</h1></center>
         <div className="display-product">
             {hotProduct()}
         </div>
         <br/><br/>
-        <center><h1>Our Product</h1></center>
+        <center><h1 className="title">Our Product</h1></center>
         <div className="display-product">
             {list}
         </div>

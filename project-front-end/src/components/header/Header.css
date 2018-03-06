@@ -1,0 +1,30 @@
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > div:nth-child(1),
+#header > div:nth-child(3) {
+    margin: 20px;
+    width: 20%;
+}
+
+#header > div:nth-child(3) > a {
+    float: right;
+}
+
+#header > div:nth-child(2) > input {
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    z-index: 1;
+    box-shadow: 0 0 10px grey;
+    /* margin: 20px; */
+}
