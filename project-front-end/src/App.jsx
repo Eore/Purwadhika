@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from './components/header/Header';
 import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 import Detail from './components/main/product/Detail';
 import Search from './components/main/Search';
 
@@ -33,8 +34,8 @@ class App extends React.Component {
 					<Route path="/detail/:id" 
 						render={({match}) => <Detail {...products.find(x => x.id === parseInt(match.params.id, 10))}/>}
 					/>					
-					{/* <Footer/> */}
 				</div>
+				<Footer/>
 			</div>
 		);
 	}
