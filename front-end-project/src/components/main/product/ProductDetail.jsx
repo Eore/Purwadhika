@@ -7,7 +7,7 @@ export default class ProductDetail extends React.Component {
         <div className="product-detail">
             <Link to="/home" className="back"><i className="fa fa-chevron-left"></i></Link>
             <div className="image">
-                <img src={`img/produk/${this.props.img}`} alt={this.props.name}/>
+                <img src={`${process.env.PUBLIC_URL}/img/produk/${this.props.img}`} alt={this.props.name}/>
             </div>
             <div className="description">
                 <img src={`img/produk/${this.props.img}`} alt={this.props.name}/>            

@@ -7,10 +7,10 @@ export default class ProductCard extends React.Component {
         <div className="column">
             <div className="ui fluid card">
                 <div className="image">
-                    <img src={`./img/produk/${this.props.img}`}/>
+                    <img src={`${process.env.PUBLIC_URL}/img/produk/${this.props.img}`}/>
                 </div>
                 <div className="content">
-                    <Link to={`/${this.props.id}`} className="header">{this.props.name}</Link>
+                    <Link to={`/detail/${this.props.id}`} className="header">{this.props.name}</Link>
                 </div>
             </div>
         </div>

@@ -39,6 +39,7 @@ class App extends React.Component {
     }
     return (
       <div>
+        <Redirect to='/home'/>
         <Header/>
         <center><h1>Most Liked</h1></center>
         <div className="display-products">
@@ -63,7 +64,7 @@ class App extends React.Component {
           <div className="display-products">
             {/* {search(this.state.key)} */}
             <Route path="/home" render={() => search(this.state.key)}/>
-            <Route path="/:id" render={({match}) => <ProductDetail {...detail(match.params.id)}/>}/>
+            <Route path="/detail/:id" render={({match}) => <ProductDetail {...detail(match.params.id)}/>}/>
             {/* <Route path="/:id" render={({match}) => {
               switch (match.url.split('/')[1]) {
                 case 'daging': return filtered('daging');
