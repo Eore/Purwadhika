@@ -1,0 +1,70 @@
+.detail-card {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0 0 5px black;
+}
+
+.detail-card > div > a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    line-height: 0;
+}
+
+.detail-card > div {
+    width: 500px;
+    height: 500px;
+}
+
+.detail-card > div > .detail {
+    text-align: justify;
+    margin: 20px;
+}
+
+.detail-card > :not(.detail) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-card > div > .nav {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 200px;
+    text-align: center;
+}
+
+.detail-card > div > .nav > p {
+    width: 100%;
+    font-size: 2em;
+}
+
+.detail-card > div > .nav a {
+    width: 50%;
+    font-size: 3em;
+    color: white;
+} 
+
+.detail-card > div > .nav > a:nth-child(2) {
+    background-color: palevioletred;
+}
+
+.detail-card > div > .nav > a:last-child {
+    background-color: lawngreen;
+}
+
+.detail-card > div > .nav > a:nth-child(2):hover {
+    background-color: transparent;
+    color: palevioletred;
+}
+
+.detail-card > div > .nav > a:last-child:hover {
+    background-color: transparent;
+    color: lawngreen;
+}
