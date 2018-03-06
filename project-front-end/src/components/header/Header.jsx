@@ -1,11 +1,11 @@
 import React from 'react';
-// import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 class Header extends React.Component {
     render = () =>
         <div id="header">
-            <div><h1>Prasmanan.id</h1></div>
+            <div><Link to='/home'><h1>Prasmanan.id</h1></Link></div>
             <div>
                 <input 
                     onChange={() => {
