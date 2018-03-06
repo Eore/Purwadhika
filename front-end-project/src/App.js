@@ -63,7 +63,7 @@ class App extends React.Component {
           <div className="display-products">
             {/* {search(this.state.key)} */}
             <Route path="/home" render={() => search(this.state.key)}/>
-            <Route path="/:id" render={({match}) => <ProductDetail {...detail(match.url.split('/')[1])}/>}/>
+            <Route path="/:id" render={({match}) => <ProductDetail {...detail(match.params.id)}/>}/>
             {/* <Route path="/:id" render={({match}) => {
               switch (match.url.split('/')[1]) {
                 case 'daging': return filtered('daging');
