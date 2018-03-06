@@ -1,4 +1,10 @@
-.product-card {
+.ui.card > .image > img {
+    width: 300px !important;
+    height: 300px !important;
+    background: center center / cover !important;
+}
+
+/* .product-card {
     position: relative;
     width: 300px;
     height: 350px;
@@ -96,4 +102,4 @@
 
 .product-card > .footer > .add:hover::after {
     opacity: 1;
-}
+} */

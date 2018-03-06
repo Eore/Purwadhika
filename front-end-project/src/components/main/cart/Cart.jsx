@@ -4,7 +4,7 @@ export default class Cart extends React.Component {
     render = () =>
         <div className="cart">
             <div className="header">
-
+                
             </div>
             <div className="content">
             

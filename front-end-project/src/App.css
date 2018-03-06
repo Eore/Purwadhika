@@ -18,12 +18,27 @@ button {
     cursor: pointer;
 }
 
-#display-products {
+.display-products {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    flex: 0 0 300px;
+    /* flex: 0 0 300px; */
 }
 
-#display-products > * {
+.display-products > * {
     margin: 5px;
+}
+
+.main-content {
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+
+.main-content > .side-menu {
+    width: 20%;
+}
+
+.main-content > .display-products {
+    width: 80%;
 }
