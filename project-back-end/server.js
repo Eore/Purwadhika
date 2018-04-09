@@ -1,6 +1,8 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const session = require('express-session');
 const bodyParser = require('body-parser');
+const fileupload = require('express-fileupload');
 const cors = require('cors')
 const port = 2000;
 
@@ -18,6 +20,8 @@ app.use(session({
 }))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}))
+app.use(express.static(`${__dirname}/images`))
+app.use(fileupload())
 // app.set('view engine', 'ejs');
 // app.set('views', `${__dirname}/public`);
 
